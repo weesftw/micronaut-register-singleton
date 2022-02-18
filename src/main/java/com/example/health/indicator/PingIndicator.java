@@ -4,7 +4,7 @@ import com.example.manager.DefaultHealth;
 import com.example.manager.HealthManager;
 import jakarta.inject.Named;
 
-@Named
+@Named("ping")
 public class PingIndicator implements HealthManager
 {
     @Override
