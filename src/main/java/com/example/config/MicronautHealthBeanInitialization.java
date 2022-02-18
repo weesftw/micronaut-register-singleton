@@ -1,6 +1,6 @@
 package com.example.config;
 
-import com.example.healthcheck.MicronautHealthIndicator;
+import com.example.health.MicronautHealthIndicator;
 import com.example.manager.HealthManager;
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.context.annotation.Context;
@@ -11,10 +11,10 @@ import jakarta.inject.Inject;
 import java.util.List;
 
 @Context
-public class MicronautHealthCheck
+public class MicronautHealthBeanInitialization
 {
     @Inject
-    public MicronautHealthCheck(ApplicationContext context, List<HealthManager> managers)
+    public MicronautHealthBeanInitialization(ApplicationContext context, List<HealthManager> managers)
     {
         for(HealthManager manager : managers)
             context.registerSingleton(HealthIndicator.class,

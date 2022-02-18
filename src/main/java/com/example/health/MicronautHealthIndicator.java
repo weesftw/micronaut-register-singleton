@@ -1,4 +1,4 @@
-package com.example.healthcheck;
+package com.example.health;
 
 import com.example.manager.HealthManager;
 import io.micronaut.core.async.publisher.Publishers;

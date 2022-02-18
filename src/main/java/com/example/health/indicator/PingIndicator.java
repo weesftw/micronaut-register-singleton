@@ -1,4 +1,4 @@
-package com.example.healthcheck.indicator;
+package com.example.health.indicator;
 
 import com.example.manager.DefaultHealth;
 import com.example.manager.HealthManager;
